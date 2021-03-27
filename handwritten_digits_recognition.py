@@ -13,7 +13,7 @@ model = tf.keras.models.Sequential()
 model.add(tf.keras.layers.Flatten())
 model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu)) # Use Relu function as default function
 model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))
-model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax)) # Use softmax whenever you have a probability distribution
+model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax)) # Use softmax whenever you want a probability distribution
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy']) 
 
